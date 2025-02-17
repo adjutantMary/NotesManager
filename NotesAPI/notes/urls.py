@@ -1,8 +1,14 @@
 from django.urls import path
 
-from .views import (LoginAPIView, NoteCreateAPIView, NoteDeleteAPIView,
-                    NoteListAPIView, NoteRetrieveUpdateAPIView,
-                    RegistrationAPIView, UserRetrieveUpdateAPIView)
+from .views import (
+    LoginAPIView,
+    NoteCreateAPIView,
+    NoteDeleteAPIView,
+    NoteListAPIView,
+    NoteRetrieveUpdateAPIView,
+    RegistrationAPIView,
+    UserRetrieveUpdateAPIView,
+)
 
 # This Python code snippet is defining URL patterns for a Django application. Here's a breakdown of
 # what it does:

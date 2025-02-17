@@ -6,9 +6,13 @@ from rest_framework.views import APIView
 
 from .models import Note, User
 from .renderers import UserJSONRenderer
-from .serializers import (LoginSerializer, NoteDetailSerializer,
-                          NoteSerializer, RegistrationSerializer,
-                          UserSerializer)
+from .serializers import (
+    LoginSerializer,
+    NoteDetailSerializer,
+    NoteSerializer,
+    RegistrationSerializer,
+    UserSerializer,
+)
 
 
 # The `RegistrationAPIView` class is an API view in Python for user registration with permission
@@ -59,7 +63,7 @@ class UserRetrieveUpdateAPIView(RetrieveUpdateAPIView):
         )
         serializer.is_valid(raise_exception=True)
         serializer.save()
-
+        print("Data is updated")
         return Response(serializer.data, status=status.HTTP_200_OK)
 
 
